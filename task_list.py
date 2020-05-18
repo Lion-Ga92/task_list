@@ -10,6 +10,7 @@ def check_list():
     task_3 = "Wash pots"
     task_4 = "Clean table"
     task_list = []
+    print("Your first task is " + task_1)
     c_t1_check = input("Have you completed task 1? ")
     if c_t1_check == "Complete":
         task_list.append((task_1, c_t1_check))
@@ -21,7 +22,7 @@ def check_list():
         return exit()
     else:
         print("Response not valid")
-
+    print("Your second task is " + task_2)
     c_t2_check = input("Have you comp. task 2? ")
     if c_t2_check == "Complete":
         task_list.append((task_2, c_t2_check))
@@ -33,6 +34,7 @@ def check_list():
         return exit()
     else:
         print("Response not valid")
+    print("Your third task is " + task_3)
     c_t3_check = input("Have you completed task 3?? " )
     if c_t3_check == "Complete":
         task_list.append((task_3, c_t3_check))
@@ -44,9 +46,11 @@ def check_list():
         return exit()
     else:
         print("Response not valid")
+    print("Your fourth task is " + task_4)
     c_t4_check = input("Have you completed task 4? ")
     if c_t4_check == "Complete":
         task_list.append((task_4, c_t4_check))
+        print(task_list)
     elif c_t4_check == "Not complete":
         task_list.append((task_4, c_t4_check))
         print(task_list)
